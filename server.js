@@ -16,6 +16,7 @@ app.set("layout", "layouts/layout");
 app.use(express.static("public"));
 
 const mongoose = require("mongoose");
+console.log("database url: " + process.env.DATABASE_URL);
 mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
