@@ -19,6 +19,7 @@ router.get("/", async (req, res) => {
 // for creating a new author
 router.get("/new", (req, res) => {
   res.render("authors/new", { author: new Author() });
+  // res.render("authors/new", {});
 });
 
 router.post("/", async (req, res) => {
